@@ -86,8 +86,8 @@ class Board:
         return n_bombs
 
     def expandPosition(self, p):
-        #already supposes that the initial position is not a
-        #bomb, neutralized square or numerated square
+        #already supposes that the initial position is neither a
+        #bomb nor a neutralized square nor a numerated square
 
         checking = [p]
 
@@ -106,8 +106,8 @@ class Board:
                     self._setPosition(pos, " ")
                     surr_pos = findSurroundings(self.board, pos)
                     for xy in surr_pos:
-                        #supÃ©rfluo, sÃ³ para evitar elementos repetidos
-                        #na lista to_check
+                        #unnecessary, just to avoid repeated elements
+                        #inside the to_check list
                         if xy not in to_check and xy not in checking:
                             to_check.append(xy)
 
@@ -172,7 +172,7 @@ def play():
 
     board.printBoard()
 
-    #jogadas 2 - n
+    #turns 2 - n
     while True:
 
         while True:
