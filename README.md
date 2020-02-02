@@ -2,7 +2,7 @@
 
 Minesweeper implemented in Python.
 
-This version of Minesweeper works with no GUI, only in the IDLE/Terminal interface. Thus, it's not very good :neutral_face:
+This version of Minesweeper works with no GUI, only in the IDLE/Terminal interface. Thus, it's not very good :neutral_face:.
 
 In order to play the game, clone/download this repo and execute the "game.py" file.
 
